@@ -6,9 +6,7 @@
 body {
   font-family: 'Space Grotesk', sans-serif;
 }
-img {
-  max-width: 100%;
-}
+
 /* colors
 white-background: #ffffff;
 blue-button: #0058ff
@@ -27,6 +25,14 @@ ul {
 
 .d-flex {
   display: flex;
+}
+
+.btn {
+  background-color: #0058ff;
+}
+
+.btn a {
+  color:#ffffff;
 }
 
 /* HEADER */
@@ -60,15 +66,6 @@ header a {
   color: #474747;
 }
 
-.btn {
-  background-color: #0058ff;
-  
-}
-
-.btn a {
-  color:#ffffff;
-}
-
 header .btn {
   padding: 5px 15px;
 }
@@ -80,8 +77,8 @@ header .btn {
 /* JAMBOTRON  */
 .jumbotron {
   background-color: #b4d0e7;
-  width: 100%;
-  padding-top: 150px;
+  max-height:  100%;
+  padding-top: 100px;
 }
 
 .jumbotron .content {
@@ -90,32 +87,81 @@ header .btn {
   max-width: 1400px;
 }
 
-.jumbotron img {
-  width: 60%;
-  top: 20%;
+.jumbotron .jumbo-image {
+  width: 55%;
+  height: 100%;
 }
 
-.jumbotron .text {
-  width: 40%;
+.jumbotron img {
+  width: 100%;
 }
 
 .jumbotron h1 {
-  margin: 50px 0 30px;
-  font-size: 6rem;
+  margin: 50px 0 20px;
+  font-size: 5rem;
   font-weight: bolder;
 }
 
+.jumbotron .col.d-flex {
+  width: 35%;
+}
+
+.text.d-flex, .col.d-flex {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .jumbotron .text {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
+  height: 65%;
 }
 .jumbotron .btn {
-  display: inline-block;
+  display: inline;
   padding: 10px 15px;
+  margin: 50px 0;
 }
-.jumbotron p, .jumbotron .btn {
-  margin-bottom: 40px;
+
+.jumbotron i {
+  font-size: 3rem;
+  padding-bottom: 20px;
 }
-  i {
-    color: black;
-  }
+
+/* MAIN */
+main {
+  background-color: #ffffff;
+}
+main .container {
+  width: 55%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-top: 100px;
+}
+
+
+.plans .month, .plans .year {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+main .table {
+  justify-content: space-between;
+}
+
+main .col-table {
+  width: calc(100% / 3 - 30px);
+  border: 1px solid #d0d0d3;
+}
+
+main .plans .size {
+  border-bottom: 1px solid #d0d0d3;
+  text-align: center;
+  padding: 10px 0;
+}  
+
+main .plans .descr {
+  padding: 30px 20px;
+}
+
+
+
 
