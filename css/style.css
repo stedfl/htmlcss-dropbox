@@ -15,9 +15,14 @@ carattere header black: #474747;
 h1: #000000;
 back jumbo: #b4d0e7;
  */
-a {
+a:not(.classic) {
   text-decoration: none;
 }
+
+.classic {
+  color: #3636f1;
+}
+
 
 ul {
   list-style: none;
@@ -26,6 +31,12 @@ ul {
 .d-flex {
   display: flex;
 }
+
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .btn {
   background-color: #0058ff;
@@ -103,12 +114,11 @@ header .btn {
   font-weight: bolder;
 }
 
-.jumbotron .col.d-flex {
+.jumbotron .jumbo.d-flex-col {
   width: 35%;
 }
 
-.text.d-flex, .col.d-flex {
-  flex-direction: column;
+.jumbo.d-flex-col, .text.d-flex-col {
   justify-content: space-between;
 }
 
@@ -137,6 +147,7 @@ main .container {
   padding-top: 100px;
 }
 
+/* MAIN - PLANS SECTION */
 main .plans h2 {
   font-size: 2.5rem;
   }
@@ -150,14 +161,17 @@ main .plans h2, main .plans .radio-button {
   margin-right: 50px;
 }
 
-main .table, main .col-table .top {
+main .card, main .col-table .top {
   justify-content: space-between;
 }
 
 main .col-table {
   width: calc(100% / 3 - 30px);
-  border: 1px solid #d0d0d3;
   padding-bottom: 30px;
+}
+
+main .col-table, .row-table {
+  border: 1px solid #d0d0d3;
 }
 
 main .col-table, main .col-table .top, .col-table .bottom, .col-table .title, .col-table ul, .col-table .sell {
@@ -186,7 +200,7 @@ main .plans .bottom {
   display: inline;
 }
 
-.plans .sell .btn {
+.plans .btn {
   display: inline;
   text-align: center;
 }
@@ -208,6 +222,40 @@ main .plans .bottom {
 .plans .bottom li {
   padding-bottom: 10px;
 }
+
+.plans .row-table {
+  margin-top: 50px;
+}
+
+.plans .off-contacts {
+  padding: 40px 0px 30px;
+}
+
+.plans .off-left {
+  width: calc(100% / 3 * 2 -10px);
+  padding-left: 30px;
+  justify-content: space-between
+}
+
+.plans .off-right {
+  width: calc(100% / 3);
+  text-align: center;
+  padding: 0 30px;
+}
+
+.plans .off-right .btn {
+  display: block;
+ }
+
+ .plans .off-left h3 {
+  margin-bottom: 20px;
+ }
+
+ .plans .off-left h4 {
+  margin-bottom: 40px;
+
+ }
+
 
 
 
