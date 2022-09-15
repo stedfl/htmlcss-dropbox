@@ -89,7 +89,7 @@ header .btn {
 /* JAMBOTRON  */
 .jumbotron {
   background-color: #b4d0e7;
-  max-height:  100%;
+  max-height: 100%;
   padding-top: 100px;
 }
 
@@ -253,8 +253,26 @@ main .plans .bottom {
 
  .plans .off-left h4 {
   margin-bottom: 40px;
+}
 
- }
+/* MAIN - FIND SECTION */
+.find .find-image {
+  width: 55%;
+}
+
+.find .trust {
+  width: 45%;
+  padding: 60px 50px;
+}
+
+.find img {
+  width: 100%;
+}
+
+.find .trust h3 {
+  font-size: 1.6rem;
+}
+
 
 
 
