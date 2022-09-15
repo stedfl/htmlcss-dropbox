@@ -29,6 +29,7 @@ ul {
 
 .btn {
   background-color: #0058ff;
+  padding: 10px 15px;
 }
 
 .btn a {
@@ -117,7 +118,6 @@ header .btn {
 }
 .jumbotron .btn {
   display: inline;
-  padding: 10px 15px;
   margin: 50px 0;
 }
 
@@ -137,19 +137,31 @@ main .container {
   padding-top: 100px;
 }
 
+main .plans h2 {
+  font-size: 2.5rem;
+  }
+
+main .plans h2, main .plans .radio-button {
+  margin-bottom: 50px;
+}
 
 .plans .month, .plans .year {
   display: inline-block;
   margin-right: 50px;
 }
 
-main .table {
+main .table, main .col-table .top {
   justify-content: space-between;
 }
 
 main .col-table {
   width: calc(100% / 3 - 30px);
   border: 1px solid #d0d0d3;
+  padding-bottom: 30px;
+}
+
+main .col-table, main .col-table .top, .col-table .bottom, .col-table .title, .col-table ul, .col-table .sell {
+  flex-direction: column;
 }
 
 main .plans .size {
@@ -158,9 +170,50 @@ main .plans .size {
   padding: 10px 0;
 }  
 
-main .plans .descr {
-  padding: 30px 20px;
+main .col-table .top {
+  height: 50%;
 }
+
+main .plans .top {
+  padding: 40px 30px 0;
+} 
+
+main .plans .bottom {
+  padding: 0 30px;
+} 
+
+.plans ul p {
+  display: inline;
+}
+
+.plans .sell .btn {
+  display: inline;
+  text-align: center;
+}
+
+.plans .top li {
+  margin-bottom: 20px;
+}
+
+.plans .top .sell .btn {
+  margin-bottom: 40px;
+}
+
+.plans .bottom hr {
+  width: 20%;
+  color: #d0d0d3;
+  margin: 30px 0;
+}
+
+.plans .bottom li {
+  padding-bottom: 10px;
+}
+
+
+
+
+
+
 
 
 
