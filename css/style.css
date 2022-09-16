@@ -147,6 +147,7 @@ header .btn.menu {
 .jumbotron {
   background-color: #b4d0e7;
   padding-top: 100px;
+  height: 740px;
 }
 
 .jumbotron .jumbo-image {
@@ -170,18 +171,22 @@ header .btn.menu {
   width: 35%;
 }
 
-
-.jumbo.d-flex-col,.text.d-flex-col {
+.jumbo.d-flex-col {
   justify-content: space-between;
 }
 
 .jumbotron .text {
   font-size: 1.1rem;
-  height: 60%;
+  height: 100%;
 }
+
+.jumbotron .text * {
+  margin-bottom: 30px;
+}
+
 .jumbotron .btn {
   display: inline;
-  margin: 50px 0;
+  
 }
 
 .jumbotron i {
@@ -211,7 +216,7 @@ main .card, main .col-table .top {
 }
 
 main .col-table {
-  width: calc(100% / 3 - 30px);
+  width: calc(100% / 3 - 25px);
   padding-bottom: 30px;
 }
 
@@ -219,7 +224,7 @@ main .col-table, .row-table {
   border: 1px solid #d0d0d3;
 }
 
-main .col-table, main .col-table .top, .col-table .bottom, .col-table .title, .col-table ul, .col-table .sell {
+main .col-table, main .col-table .top, .col-table .bottom, .col-table ul, .col-table .sell {
   flex-direction: column;
 }
 
@@ -233,11 +238,33 @@ main .col-table .top {
   height: 50%;
 }
 
+.plans .col-table .top .title {
+  margin-bottom: 50px;
+}
+
+
 main .plans .top {
   padding: 40px 30px 0;
 } 
 
-main .plans .bottom {
+.plans .title span {
+  font-weight: bold;
+}
+
+.plans .icon {
+  padding-right: 5px;
+}
+
+.plans .top .sell {
+  margin-top: 30px;
+}
+
+.plans .top .title :last-child {
+  margin-top: 15px;
+  
+}
+
+.plans .bottom {
   padding: 0 30px;
 } 
 
@@ -250,7 +277,7 @@ main .plans .bottom {
   text-align: center;
 }
 
-.plans .top li {
+.plans li {
   margin-bottom: 20px;
 }
 
@@ -264,8 +291,16 @@ main .plans .bottom {
   margin: 30px 0;
 }
 
+.plans .bottom h4 {
+  margin-bottom: 30px;
+}
+
 .plans .bottom li {
   padding-bottom: 10px;
+}
+
+.plans .bottom .icon {
+  color: #0058ff;
 }
 
 .plans .row-table {
@@ -435,7 +470,6 @@ main .plans .bottom {
   justify-content: space-between;
 }
 
-
 .bottom-bis .container h2 {
   width: 50%;
 }
@@ -450,6 +484,11 @@ main .plans .bottom {
   color: black;
 }
 
+.bottom-bis .btn:hover {
+  background-color: rgb(227, 222, 222);
+}
+
+/* FAQ SECTION */
 .faq li {
   padding: 40px 0 ;
   border-bottom: 1px solid grey;
