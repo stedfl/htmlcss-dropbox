@@ -428,6 +428,47 @@ main .plans .bottom {
   color: black;
 }
 
+.faq li {
+  padding: 40px 0 ;
+  border-bottom: 1px solid grey;
+}
+ 
+.faq ul {
+  border-top: 1px solid grey;
+}
+
+.faq li.d-flex {
+  justify-content: space-between;
+}
+
+.faq ul li i {
+  padding-right: 40px;
+  font-size: 0.7rem;
+}
+
+.faq ul li p {
+  padding-top: 50px;
+  display: none;
+}
+
+.faq ul li a.down {
+  display: none;
+}
+
+.faq ul li:hover a.up {
+  display: none;
+}
+
+.faq ul li:hover a.down {
+  display: block;
+}
+
+.faq ul li:hover p {
+    display: block;
+ }
+
+
+
 
 
 
