@@ -13,27 +13,25 @@
 </head>
 <body>
   <header class="d-flex">
-    <div class="menu left d-flex">   
-      <img src="img/logo-small.png" alt="Logo">
-      <nav>
+    <nav class="menu left">
         <ul class="d-flex">
+          <li><a href=""><img src="img/logo-small.png" alt="Logo"></a></li>
           <li><a href="#">Perchè Dropbox</a></li>
-          <li><a href="#">Funzioni</a></li>
+          <li><a href="#function">Funzioni</a></li>
           <li><a href="#prices">Piani e Prezzi</a></li>
         </ul>
-      </nav>
-    </div> 
+    </nav> 
 
-    <div class="menu right">
-      <nav>
+      <nav class="menu right">
         <ul class="d-flex">
           <li><a href="#">Supporto</a></li>
-          <li><a href="#">Contatta l'ufficio vendite</a></li>
+          <li><a href="#selling-office">Contatta l'ufficio vendite</a></li>
           <li><a href="#">Accedi</a></li>
-          <li class="btn"><a href="#">Inizia</a></li>
+          <li>
+            <div class="btn menu"><a href="#">Inizia</a></div>
+          </li>
         </ul>
       </nav>
-    </div>
   </header>
 
   <!-- JUMBOTRON -->
@@ -49,7 +47,7 @@
             </div>
             <p>Annulla in qualsiasi momento</p>
           </div>
-          <p><i class="fa-solid fa-arrow-down"></i></p>
+          <a href="#prices"><i class="fa-solid fa-arrow-down"></i></a>
         </div>
         <div class="jumbo-image">
           <img src="img/jumbo.png" alt="jumbo">
@@ -271,7 +269,7 @@
         <!-- /COLUMN TABLE -->
 
         <!-- ROW TABLE -->
-        <div class="row-table">
+        <div class="row-table" id="selling-office">
           <div class="size">
             <i class="fa-solid fa-building"></i>
             <span>&nbsp;Team</span>
@@ -316,7 +314,7 @@
     <!-- /SECTION WHERE TO FIND -->
     
     <!-- SECTION BUSINESS -->
-    <section class="business">
+    <section class="business" id="function">
       <div class="container ">
         <h2>Esegui più operazioni con Dropxbox Business</h2>
         <div class="row-art d-flex">
@@ -532,14 +530,9 @@
         <i class="fa-solid fa-earth-americas"></i>
         
         <span>Italiano</span>
-        <a href="#"></a>
-        <i class="fa-sharp fa-solid fa-caret-up"></i>
-
+        <a href="#"><i class="fa-sharp fa-solid fa-caret-up"></i></a>
       </div>
-      
-
       <!-- /FOOTER BOTTOM -->
-     
 
     </div>
   </footer>
