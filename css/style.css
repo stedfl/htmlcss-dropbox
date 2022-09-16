@@ -43,11 +43,13 @@ h1 {
 
 h2 {
   font-size: 2.5rem;
+  margin-bottom: 50px;
 }
 
 h3 {
   font-size: 1.6rem;
   line-height: 2.1rem;
+  margin-bottom: 30px;
 }
 
 h4 {
@@ -171,7 +173,7 @@ main .container {
 
 /* MAIN - PLANS SECTION */
 
-main .plans h2, main .plans .radio-button {
+main .plans .radio-button {
   margin-bottom: 50px;
 }
 
@@ -303,7 +305,22 @@ main .plans .bottom {
 }
 
 /* SECTION BUSINESS */
+.business .row-art {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
+.business article {
+  width: calc(100% / 3 - 30px);
+  margin-bottom: 50px;
+}
+ .business article img {
+  width: 100%;
+ }
+
+ .business article h3 {
+  margin-bottom: 30px;
+ }
 
 
 
