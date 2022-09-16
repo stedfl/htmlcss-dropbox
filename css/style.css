@@ -67,6 +67,18 @@ section, .jumbotron {
   margin-bottom: 150px;
 }
 
+.container {
+  width: 52%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.content {
+  width: 62%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
 .btn {
   background-color: #0058ff;
   padding: 10px 15px;
@@ -121,12 +133,6 @@ header .btn {
   padding-top: 100px;
 }
 
-.jumbotron .content {
-  width: 62%;
-  margin: 0 auto;
-  max-width: 1400px;
-}
-
 .jumbotron .jumbo-image {
   width: 55%;
 }
@@ -167,11 +173,7 @@ header .btn {
 main {
   background-color: #ffffff;
 }
-main .container {
-  width: 52%;
-  margin: 0 auto;
-  max-width: 1200px;
-}
+
 
 /* MAIN - PLANS SECTION */
 
@@ -465,6 +467,29 @@ main .plans .bottom {
 
 .faq ul li:hover p {
     display: block;
+ }
+
+ /* FOOTER  */
+ footer {
+  background-color: #000000;
+  height: 500px;
+  color: #ffffff;
+ }
+
+ footer a {
+  color: #ffffff;
+ }
+ 
+ .footer-top {
+  justify-content: space-between;
+ }
+
+ footer li {
+  padding-bottom: 20px;
+ }
+
+ footer .col-menu {
+  padding: 100px 0;
  }
 
 
