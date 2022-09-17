@@ -19,6 +19,11 @@ section::before {
   margin: -80px 0 0;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 a:not(.classic) {
   text-decoration: none;
 }
@@ -26,7 +31,6 @@ a:not(.classic) {
 .classic {
   color: #3636f1;
 }
-
 
 ul {
   list-style: none;
@@ -43,6 +47,8 @@ ul {
 
 h1 {
   font-size: 5rem;
+  font-family: sans-serif;
+  font-weight: 900;
 }
 
 h2 {
@@ -81,6 +87,7 @@ section, .jumbotron {
   width: 62%;
   margin: 0 auto;
   max-width: 1400px;
+  height: 100%;
 }
 
 .btn {
@@ -110,7 +117,7 @@ header {
   width: 100%;
 }
 
- header .menu.left li {
+header .menu.left li {
   margin-right: 30px;
   height: 80px;
   line-height: 80px;
@@ -146,52 +153,51 @@ header .btn.menu {
 /* JUMBOTRON  */
 .jumbotron {
   background-color: #b4d0e7;
-  padding-top: 100px;
-  height: 740px;
+  height: 820px;
+  padding-top: 80px;
+}
+
+.jumbotron .catch {
+  height: 45%;
+}
+
+.jumbotron .callto {
+  height: 55%;
 }
 
 .jumbotron .jumbo-image {
   width: 55%;
 }
 
-.jumbotron img {
-  width: 120%;
+.jumbotron .over-image {
+  width: 130%;
+  height: 130%;
 }
 
 .jumbotron h1 {
-  margin: 50px 0 40px;
-  font-weight: bolder;
+  padding: 80px 0;
 }
 
 .jumbotron i {
   color: black;
+  font-size: 3rem;
 }
 
 .jumbotron .jumbo.d-flex-col {
-  width: 35%;
-}
-
-.jumbo.d-flex-col {
-  justify-content: space-between;
+  width: 30%;
+  justify-content: space-around;
 }
 
 .jumbotron .text {
   font-size: 1.1rem;
-  height: 100%;
 }
 
 .jumbotron .text * {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .jumbotron .btn {
   display: inline;
-  
-}
-
-.jumbotron i {
-  font-size: 3rem;
-  padding-bottom: 50px;
 }
 
 /* MAIN */

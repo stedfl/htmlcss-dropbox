@@ -37,20 +37,25 @@
   <!-- JUMBOTRON -->
   <div class="jumbotron">
     <div class="content">
-      <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
-      <div class="callto d-flex">
+      <div class="catch">
+        <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
+      </div>
+      
+      <div class="callto d-flex debug">
         <div class="jumbo d-flex-col">
           <div class="text">
             <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente ed integrato per ottimizzare il flusso di lavoro esistente.</p>
             <div>
               <div class="btn"><a href="#">Inizia la tua prova gratuita</a></div>
             </div>
-            <p>Annulla in qualsiasi momento</p>
-            <a href="#prices"><i class="fa-solid fa-arrow-down"></i></a>
+            <p>Annulla in qualsiasi momento</p>        
           </div>
+          <a href="#prices"><i class="fa-solid fa-arrow-down"></i></a>
         </div>
         <div class="jumbo-image">
-          <img src="img/jumbo.png" alt="jumbo">
+          <div class="over-image">
+            <img src="img/jumbo.png" alt="jumbo">
+          </div>
         </div>
     
       </div>
@@ -65,10 +70,22 @@
         <h2>Trova il piano business che fa per te</h2>
         <div class="radio-button">
           <div class="month">
-            <input name="fatt" type="radio">Fatturazione mensile
+            <label class="button-box">
+              <input type="radio" name="fatt" checked="checked">
+              <span class="checkmark"></span>
+              Fatturazione mensile
+            </label>
+           
+
+            <!-- <input name="fatt" type="radio">Fatturazione mensile -->
           </div>
           <div class="year">
-            <input name="fatt" type="radio">Fatturazione annuale
+            <label class="button-box">
+              <input type="radio" name="fatt" checked="checked">
+              <span class="checkmark"></span>
+              Fatturazione annuale
+            </label>
+            <!-- <input name="fatt" type="radio">Fatturazione annuale -->
           </div>
         </div>
 
