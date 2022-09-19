@@ -103,6 +103,17 @@ section, .jumbotron {
   color:#ffffff;
 }
 
+.icon {
+  padding-right: 5px;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.horizontal-bar {
+  height: 0.5px;
+  background-color: lightgray;
+ }
+
 /* HEADER */
 header {
   height: 80px;
@@ -234,17 +245,15 @@ main .col-table, main .col-table .top, .col-table .bottom, .col-table ul, .col-t
   flex-direction: column;
 }
 
+.plans p, .plans span {
+  font-size: 0.9rem;
+}
+
 main .plans .size {
   border-bottom: 1px solid #d0d0d3;
   text-align: center;
   padding: 10px 0;
 }  
-
-.plans .icon {
-  padding-right: 5px;
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-}
 
 .card .col-table:nth-child(1) .icon.user-size::before {
   content: "\f007";
@@ -260,6 +269,23 @@ main .plans .size {
 
 main .col-table .top {
   height: 50%;
+}
+
+main .col-table .bar-row {
+  height: 10%;
+  padding: 30px;
+  align-items: center;
+}
+
+main .col-table .bar-row .horizontal-bar {
+  background-color: lightgray;
+  height: 0.5px;
+  width: 20%;
+}
+ 
+
+main .col-table .bottom {
+  height: 40%;
 }
 
 .plans .col-table .top .title {
@@ -441,6 +467,11 @@ main .plans .top {
   overflow: scroll;
  }
 
+ .partner .horizontal-bar {
+  width: 20%;
+  height: 1px;
+ }
+
 .partner .box {
   width: 50%;
   height: 50%;
@@ -544,9 +575,17 @@ main .plans .top {
   justify-content: space-between;
 }
 
-.faq ul li i {
+.faq ul li .icon {
   padding-right: 40px;
   font-size: 0.7rem;
+}
+
+.faq .icon.chevron-down::before {
+  content: "\f078";
+}
+
+.faq .icon.chevron-up::before {
+  content: "\f077";
 }
 
 .faq ul li p {
@@ -554,15 +593,15 @@ main .plans .top {
   display: none;
 }
 
-.faq ul li a.down {
-  display: none;
-}
-
-.faq ul li:hover a.up {
+.faq ul li a.up {
   display: none;
 }
 
 .faq ul li:hover a.down {
+  display: none;
+}
+
+.faq ul li:hover a.up {
   display: block;
 }
 
@@ -593,27 +632,34 @@ footer li {
   padding-bottom: 20px;
 }
 
-.footer-top > .col-menu:first-child {
-  border-bottom: 1px solid #ffffff;
-}
-
 footer .col-menu {
   padding: 100px 0 60px;
 }
 
 .footer-bottom {
   padding: 50px 0;
-  color: grey;
-}
-
-.footer-bottom i {
-  color: grey;
 }
 
 .footer-bottom * {
   padding-left: 5px;
-  color: #F6F6F6;
+  color: grey;
 }
+
+.footer-bottom .horizontal-bar {
+  width: 10%;
+  background-color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.footer-bottom .icon.earth::before {
+  content: "\f57d";
+}
+
+.footer-bottom .icon.caret-up::before {
+  content: "\f0d8";
+}
+
+
 
 
 
