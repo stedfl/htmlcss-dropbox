@@ -228,7 +228,7 @@ main .plans .radio-button {
   margin-right: 50px;
 }
 
-main .card, main .col-table .top {
+main .card, main .col-table {
   justify-content: space-between;
 }
 
@@ -272,8 +272,7 @@ main .col-table .top {
 }
 
 main .col-table .bar-row {
-  height: 10%;
-  padding: 30px;
+  margin: 50px 0;
   align-items: center;
 }
 
@@ -283,9 +282,8 @@ main .col-table .bar-row .horizontal-bar {
   width: 20%;
 }
  
-
 main .col-table .bottom {
-  height: 40%;
+  height: 50%;
 }
 
 .plans .col-table .top .title {
