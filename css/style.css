@@ -12,6 +12,7 @@ body {
   font-family: sans-serif;
 }
 
+/* GENERAL */
 section::before {
   content: "";
   display: block;
@@ -211,7 +212,7 @@ header .btn.menu {
   margin-bottom: 50px;
 }
 
-.arrow {
+.jumbo .arrow {
   margin-bottom: 20px;
 }
 
@@ -224,8 +225,7 @@ main {
   background-color: #ffffff;
 }
 
-
-/* MAIN - PLANS SECTION */
+/* PLANS SECTION */
 
 main .plans .radio-button {
   margin-bottom: 50px;
@@ -395,7 +395,7 @@ main .plans .top {
   margin-bottom: 40px;
 }
 
-/* MAIN - FIND SECTION */
+/* MAIN - WHERE TO FIND SECTION */
 .find .find-image {
   width: 60%;
 }
@@ -423,7 +423,7 @@ main .plans .top {
   color: black;
 }
 
-/* SECTION BUSINESS */
+/* MAIN - BUSINESS SECTION */
 .business .row-art {
   justify-content: space-between;
   flex-wrap: wrap;
@@ -442,8 +442,7 @@ main .plans .top {
   margin-bottom: 30px;
 }
 
-
- /* SECTION PARTNER */
+ /* PARTNER SECTION */
 .partner .top-partner {
   margin-bottom: 150px;
 }
@@ -460,12 +459,12 @@ main .plans .top {
   width: calc(100% / 3);
   flex-wrap: wrap;
   overflow: scroll;
- }
+}
 
- .partner .horizontal-bar {
+.partner .horizontal-bar {
   width: 20%;
   height: 1px;
- }
+}
 
 .partner .box {
   width: 50%;
@@ -653,29 +652,3 @@ footer .col-menu {
 .footer-bottom .icon.caret-up::before {
   content: "\f0d8";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
