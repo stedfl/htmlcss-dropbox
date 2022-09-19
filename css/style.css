@@ -58,13 +58,13 @@ h2 {
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 2.1rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 h4 {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 p {
@@ -135,9 +135,12 @@ header .menu.left li {
 }
 
 header .menu.right li {
-  margin-left: 40px;
   height: 80px;
   line-height: 80px;
+}
+
+header .menu.right li:not(li:last-child) {
+  margin-left: 40px;
 }
 
 header .menu.left li:hover {
@@ -156,7 +159,8 @@ header a {
   color: #474747;
 }
 
-header .btn.menu {
+header .btn.menu { 
+  margin-left: 25px;
   padding: 5px 15px;
   display: inline;
 }
@@ -207,6 +211,10 @@ header .btn.menu {
   margin-bottom: 50px;
 }
 
+.arrow {
+  margin-bottom: 20px;
+}
+
 .jumbotron .btn {
   display: inline;
 }
@@ -234,7 +242,7 @@ main .card, main .col-table {
 
 main .col-table {
   width: calc(100% / 3 - 36px);
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 main .col-table, .row-table {
@@ -290,9 +298,8 @@ main .col-table .bottom {
   margin-bottom: 50px;
 }
 
-
 main .plans .top {
-  padding: 40px 30px 0;
+  padding: 30px 30px 0;
 } 
 
 .plans .title span {
@@ -348,18 +355,8 @@ main .plans .top {
   margin-bottom: 40px;
 }
 
-.plans .bottom hr {
-  width: 20%;
-  color: #d0d0d3;
-  margin: 30px 0;
-}
-
 .plans .bottom h4 {
   margin-bottom: 30px;
-}
-
-.plans .bottom li {
-  padding-bottom: 10px;
 }
 
 .plans .row-table {
@@ -405,7 +402,7 @@ main .plans .top {
 
 .find .trust {
   width: 40%;
-  padding: 60px 50px;
+  padding: 60px 30px 60px 50px;
 }
 
 .find img {
@@ -627,7 +624,7 @@ footer ul a:hover {
 }
 
 footer li {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 footer .col-menu {
