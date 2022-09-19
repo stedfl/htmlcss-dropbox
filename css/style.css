@@ -69,7 +69,7 @@ h4 {
 
 p {
   color: black;
-  line-height: 1.3rem;
+  line-height: 1.4rem;
   font-size: 1rem;
 }
 
@@ -109,7 +109,7 @@ header {
   background-color:#ffffff;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 20px;
   position: fixed;
   z-index: 999;
   top: 0;
@@ -118,13 +118,13 @@ header {
 }
 
 header .menu.left li {
-  margin-right: 30px;
+  margin-right: 40px;
   height: 80px;
   line-height: 80px;
 }
 
 header .menu.right li {
-  margin-left: 30px;
+  margin-left: 40px;
   height: 80px;
   line-height: 80px;
 }
@@ -133,7 +133,7 @@ header .menu.left li:hover {
   border-bottom: 2px solid black;
 }
 
-header .menu.right li:hover {
+header .menu.right li:not(.menu.right ul > li:last-child ):hover {
   border-bottom: 2px solid black;
 }
 
@@ -222,7 +222,7 @@ main .card, main .col-table .top {
 }
 
 main .col-table {
-  width: calc(100% / 3 - 25px);
+  width: calc(100% / 3 - 36px);
   padding-bottom: 30px;
 }
 
@@ -239,6 +239,24 @@ main .plans .size {
   text-align: center;
   padding: 10px 0;
 }  
+
+.plans .icon {
+  padding-right: 5px;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.card .col-table:nth-child(1) .icon.user-size::before {
+  content: "\f007";
+}
+
+.card .col-table:nth-child(2) .icon.user-size::before {
+  content: "\f0c0";
+}
+
+.card .col-table:nth-child(3) .icon.user-size::before {
+  content: "\f1ad";
+}
 
 main .col-table .top {
   height: 50%;
@@ -257,8 +275,16 @@ main .plans .top {
   font-weight: bold;
 }
 
-.plans .icon {
-  padding-right: 5px;
+.plans .top .icon.user::before {
+  content: "\f007";
+}
+
+.plans .top .icon.folder::before {
+  content: "\f07b";
+}
+
+.plans .top .icon.share::before {
+  content: "\f1e0";
 }
 
 .plans .top .sell {
@@ -267,12 +293,19 @@ main .plans .top {
 
 .plans .top .title :last-child {
   margin-top: 15px;
-  
 }
 
 .plans .bottom {
   padding: 0 30px;
 } 
+
+.plans .bottom .icon {
+  color: #0058ff;
+}
+
+.plans .bottom .icon.check::before {
+  content: "\f00c";
+}
 
 .plans ul p {
   display: inline;
@@ -305,12 +338,12 @@ main .plans .top {
   padding-bottom: 10px;
 }
 
-.plans .bottom .icon {
-  color: #0058ff;
-}
-
 .plans .row-table {
   margin-top: 50px;
+}
+
+.row-table .icon.user-size::before {
+  content: "\f1ad";
 }
 
 .plans .off-contacts {
@@ -405,6 +438,7 @@ main .plans .top {
 .partner .big-box {
   width: calc(100% / 3);
   flex-wrap: wrap;
+  overflow: scroll;
  }
 
 .partner .box {
@@ -468,7 +502,7 @@ main .plans .top {
   color: #61083e;
 }
 
-.partner .box:hover {
+.partner .box:focus {
   border: 15px solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
@@ -544,6 +578,11 @@ footer {
 
 footer a {
   color: #ffffff;
+  text-decoration: underline;
+}
+
+footer ul a:hover {
+  text-decoration: underline;
 }
 
 .footer-top {
